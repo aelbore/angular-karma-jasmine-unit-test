@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "tsc": "node_modules/.bin/tsc",
-    "test-once": "npm run tsc && npm run karma start karma.conf.js --single-run",
-    "test": "npm run tsc && npm run karma start karma.conf.js",
-    "karma": "node_modules/.bin/karma"
+    "test-once": "npm run tsc && npm run karma-test-once",
+    "test": "npm run tsc && npm run karma-test",
+    "karma-test-once": "node_modules/.bin/karma start karma.conf.js --single-run",
+    "karma-test": "node_modules/.bin/karma start karma.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,20 +21,20 @@
   },
   "homepage": "https://github.com/aelbore/angular-karma-jasmine-unit-test#readme",
   "dependencies": {
-    "@angular/common": "2.4.10",
-    "@angular/compiler": "2.4.10",
-    "@angular/core": "2.4.10",
-    "@angular/forms": "2.4.10",
-    "@angular/http": "2.4.10",
-    "@angular/platform-browser": "2.4.10",
-    "@angular/platform-browser-dynamic": "2.4.10",
-    "@angular/router": "3.4.10",
+    "@angular/common": "^2.4.10",
+    "@angular/compiler": "^2.4.10",
+    "@angular/core": "^2.4.10",
+    "@angular/forms": "^2.4.10",
+    "@angular/http": "^2.4.10",
+    "@angular/platform-browser": "^2.4.10",
+    "@angular/platform-browser-dynamic": "^2.4.10",
+    "@angular/router": "^3.4.10",
     "core-js": "^2.4.1",
-    "reflect-metadata": "0.1.10",
-    "rxjs": "5.2.0",
-    "systemjs": "0.20.10",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.2.0",
+    "systemjs": "^0.20.10",
     "typescript": "^2.2.1",
-    "zone.js": "0.7.8"
+    "zone.js": "^0.7.8"
   },
   "devDependencies": {
     "@types/es6-shim": "^0.31.32",
