@@ -1,0 +1,49 @@
+{
+  "name": "angular-karma-jasmine-unit-test",
+  "version": "1.0.0",
+  "description": "Angular Karma Jasmine Unit Test using SystemJS",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "node_modules/.bin/tsc",
+    "test-once": "npm run tsc && npm run karma start karma.conf.js --single-run",
+    "test": "npm run tsc && npm run karma start karma.conf.js",
+    "karma": "node_modules/.bin/karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelbore/angular-karma-jasmine-unit-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aelbore/angular-karma-jasmine-unit-test/issues"
+  },
+  "homepage": "https://github.com/aelbore/angular-karma-jasmine-unit-test#readme",
+  "dependencies": {
+    "@angular/common": "2.4.10",
+    "@angular/compiler": "2.4.10",
+    "@angular/core": "2.4.10",
+    "@angular/forms": "2.4.10",
+    "@angular/http": "2.4.10",
+    "@angular/platform-browser": "2.4.10",
+    "@angular/platform-browser-dynamic": "2.4.10",
+    "@angular/router": "3.4.10",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.2.0",
+    "systemjs": "0.20.10",
+    "typescript": "^2.2.1",
+    "zone.js": "0.7.8"
+  },
+  "devDependencies": {
+    "@types/es6-shim": "^0.31.32",
+    "@types/jasmine": "^2.5.45",
+    "@types/node": "^7.0.8",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-htmlfile-reporter": "^0.3.5",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2"
+  }
+}
